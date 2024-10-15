@@ -1,0 +1,48 @@
+[
+    {
+        "nombre":"liliana",
+        "apellido":"ortiz",
+        "edad":34,
+        "contacto":{
+            "correo":"lalal@hotmail.com",
+            "cel":456742245,
+            "direccion":"carrera 45 #23b-56"
+        },
+        "Femenino":true
+    },
+    {
+        "nombre":"mariana",
+        "apellido":"olivos",
+        "edad":23,
+        "contacto":{
+            "correo":"mariana@hotmail.com",
+            "cel":345667888,
+            "direccion":"carrera 37 #3a-12"
+        },
+        "Femenino":true
+    },
+    
+    {
+        "nombre":"omar",
+        "apellido":"tellez",
+        "edad":40,
+        "contacto":{
+            "correo":"mar@gmail.com",
+            "cel":315432978,
+            "direccion":"calle 32 #56-98"
+        },
+        "Femenino":false
+    },
+    {
+        "nombre":"cristian",
+        "apellido":"rios",
+        "edad":56,
+        "contacto":{
+            "correo":"creis@gmail.com",
+            "cel":3456787546,
+            "direccion":"calle 33 # 98-65"
+        },
+        "Femenino":false
+    }
+
+]
