@@ -120,23 +120,38 @@ let botonenviar=document.getElementById("Generar")
 
     botonenviar.addEventListener("click", function(){
         let numeroaleatorio= Math.floor(Math.random() * 100) + 1;
+        console.log(numeroaleatorio)
 
         let ingrese=document.getElementById("ingrese")
         ingrese.textContent=`ingrese el numero que cree que se genero entre 1 a 100`
-
-        let num=parseInt(document.getElementById("numero"))
         
-        for (let i = 0; i < 10; i++) {
-                ;  
-        }
-        if (num===numeroaleatorio) {
-        intento.textContent=`adivinaste el numero ${num} es igual al numero
-        secreto ${numeroaleatorio} y el numero de instentos fue ${numerodeintentos}`
-        } else {
-            
-        }
-
+        let i=0;
+        let enviar=document.getElementById("envia")
+       
+        enviar.addEventListener("click", function(){
+            let num=parseInt((document.getElementById("numero").value))
+            i++;
     
+            if (num === numeroaleatorio) {
+                console.log("adivinaste")
+                let intento=document.getElementById("intento")
+                intento.textContent=`adivinaste!!! el numero ${num} es igual al numero
+                secreto ${numeroaleatorio}, el numero de intentos fue ${i}`
+                console.log(`el numero de intentos fue ${i}`)
+                
+                } else {
+                if (num>numeroaleatorio) {
+                    intento.textContent=`pista... el numero secreto es menor que ${num}` 
+                    console.log(`pista... el numero secreto es menor que ${num}`)
+                } else {
+                    intento.textContent=`pista... el numero secreto es mayor que ${num}`
+                    console.log(`pista... el numero secreto es mayor que ${num}`)
+                }
+                intento.textContent=`siga intentando, numero de intentos ${i}` 
+                console.log("siga intentando") 
+
+                }
+        })
     })
 
 
