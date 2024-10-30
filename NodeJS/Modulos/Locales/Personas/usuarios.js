@@ -6,7 +6,7 @@ class usuario{
       this.carrera=carrera
     }
     saludar(){
-        return `hola soy ${this.nombre}${this.apellido}, tengo ${this.edad} años y
+        return `hola soy ${this.nombre} ${this.apellido}, tengo ${this.edad} años y
         soy de la carrera de ${this.carrera}`
     } 
 }
