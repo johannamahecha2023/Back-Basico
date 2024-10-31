@@ -19,11 +19,20 @@ conexion.connect((error)=>{
     } else{
         console.log(`conexion exitosa en la BD`)
     }
- //me permite cerrar la conexion a la BD
+//query es el metodo que permite realizar comandos y ejecutar desde aplicacion
+conexion.query('SELECT*FROM persona where id=1;',(error,data)=>{
+    if(error) {
+        console.log(`hay un error en la consulta de la BD ${error}`)
+    }
+    else{
+        console.log(data)
+    }
+})
+//me permite cerrar la conexion a la BD
 conexion.end((error)=>{
     if(error){
-      console.log(` no se pudo cerrar la conexion en la BD ${Error}`)
-      return;
+      console.log(` no se pudo cerrar la conexion en la BD ${error}`)
+      
     }
     else{
         console.log(`conexion cerrada a la BD exitosa`)
