@@ -43,15 +43,6 @@ CREATE TABLE `profesores_cursos` (
   PRIMARY KEY (`profesores_profesorId`, `cursos_codigo_curso`)
 );
 
-ALTER TABLE `profesores_cursos` ADD FOREIGN KEY (`profesores_profesorId`) REFERENCES `profesores` (`profesorId`);
-
-ALTER TABLE `profesores_cursos` ADD FOREIGN KEY (`cursos_codigo_curso`) REFERENCES `cursos` (`codigo_curso`);
-
-
-ALTER TABLE `documentos` ADD FOREIGN KEY (`numero_documento`) REFERENCES `profesores` (`profesorId`);
-
-ALTER TABLE `documentos` ADD FOREIGN KEY (`numero_documento`) REFERENCES `estudiantes` (`estudianteId`);
-
 ALTER TABLE `estudiantes` ADD FOREIGN KEY (`estudianteId`) REFERENCES `cursos` (`codigo_curso`);
 
 /*1. Seleccionar el nombre y apellido de todos los estudiantes.*/
