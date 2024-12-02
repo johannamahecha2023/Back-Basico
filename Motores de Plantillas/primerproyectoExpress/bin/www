@@ -87,4 +87,7 @@ function onListening() {
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
+  //linea de codigo para mostrar en consola siempre que se ejecute el servidor
+  //para ejecutar siempre utilizamos el comando npm start en la terminal
+ console.log('el servidor se levanto por el puerto http://localhost:3000')
 }
